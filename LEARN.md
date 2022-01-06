@@ -67,7 +67,7 @@ The function checks the caller’s balance. If any, the function sends back that
 ```js
 (bool sent, ) = msg.sender.call{value: balances[msg.sender]}("");
 ```
-This calls the _fallback()_ function if _msg.sender_ is a contract. What if _fallback()_ has some malicious code in it? What if _fallback()_ calls withdrawAll() again?
+This calls the _fallback()_ function if _msg.sender_ is a contract. What if _fallback()_ has some malicious code in it? What if _fallback()_ calls _withdrawAll()_ again?
 If the latter happened, then _withdrawAll()_ will send funds again because the line “balances[msg.sender] = 0;” did not execute yet. Now the name "reentrancy" makes sense, right? Let’s attack this contract, shall we?
 
 ## Writing the Attack contract:
@@ -270,6 +270,6 @@ contract Locked {
 This can be helpful if you like to allow personal addresses only to call your functions.
 
 ## THE END!
-That all for this quest, you now know what to do to protect your contract from reentrancy. Happy coding! 
+That is all for this quest, you now know what to do to protect your contract from reentrancy. Happy coding! 
 
 
