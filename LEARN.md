@@ -130,7 +130,7 @@ So the function being attacked is not the one that called _fallback()_.
  Isn’t this cool? But now to Hardhat, let's simulate the attack.
 
 ## Attacking in Hardhat:
- create a _scripts_ directory, create a js file, name it Attack.js.
+ Create a _scripts_ directory, create a js file, name it Attack.js.
  This piece of code will be  a little bit long because it has some extra _console.log_ statements to explain milestones.
  
 ```js
