@@ -1,5 +1,5 @@
 # Draining smart contracts with reentrancy
-Welcome to the 4th quest in this Polygon series. Now that you are comfortable with Polygon (You basically know how things work, how to connect to the blockchain, how to play around in Hardhat), we can proceed with something new. How about smart contracts security?
+Welcome to the 5th quest in this Polygon series. Now that you are comfortable with Polygon (You basically know how things work, how to connect to the blockchain, how to play around in Hardhat), we can proceed with something new. How about smart contracts security?
 First, set up a Hardhat project with all the neccessary stuff (Alchemy key and two private keys). You can revise quest 1 and quest 3 for this. In short, your _module.exports_ in Hardhat configuration should look like this:
 ```js
 module.exports = {
